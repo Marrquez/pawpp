@@ -12,31 +12,42 @@ import Contact from '../contact/Contact';
 import Banner from '../banner/Banner';
 
 class Home extends Component {
-  render() {
-    return (
-        <div className="home">
-            <div className="preloader">
-                <svg className="spinner" viewBox="0 0 50 50">
-                    <circle className="path" cx="25" cy="25" r="20" fill="none" strokeWidth="5"></circle>
-                </svg>
+    constructor(props) {
+        super();
+        this.state = { }
+    }
+    componentWillMount(){ }
+    componentDidMount(){ }
+    componentWillUnmount() { }
+    componentWillReceiveProps(nextProps){ }
+    shouldComponentUpdate(nextProps, nextState){ }
+    componentWillUpdate(nextProps, nextState){ }
+    componentDidUpdate(prevProps, prevState){ }
+    render() {
+        return (
+            <div className="home">
+                <div className="preloader">
+                    <svg className="spinner" viewBox="0 0 50 50">
+                        <circle className="path" cx="25" cy="25" r="20" fill="none" strokeWidth="5"></circle>
+                    </svg>
+                </div>
+                <div className="transition-overlay"></div>
+                <User></User>
+                <header className="header">
+                    <div id="particles-bg"></div>
+                    <Menu></Menu>
+                    <Banner></Banner>
+                </header>
+                <About></About>
+                <Contact></Contact>
+                <Services></Services>
+                <Portfolio></Portfolio>
+                <News></News>
+                <Quote></Quote>
+                <Footer></Footer>
             </div>
-            <div className="transition-overlay"></div>
-            <User></User>
-            <header className="header">
-                <div id="particles-bg"></div>
-                <Menu></Menu>
-                <Banner></Banner>
-            </header>
-            <About></About>
-            <Contact></Contact>
-            <Services></Services>
-            <Portfolio></Portfolio>
-            <News></News>
-            <Quote></Quote>
-            <Footer></Footer>
-        </div>
-    );
-  }
+        );
+    }
 }
 
 export default Home;
