@@ -15,8 +15,8 @@ class Banner extends Component {
     render() {
         return (
             <div className="banner inner">
-                <h2>IDEA FACTORY</h2>
-                <p>Coddle is a commercial web and digital agency, known for unique conceptual images and ideas. His interest in satire and narrative influences his work behind the camera.</p>
+                <h2>JUAN CARLOS</h2>
+                <p>Que mk tan pero tan care chimbin, y demorado para pagar, pero bueno, ahí vamos... Arriba R&S Solutions!!</p>
                 <a href="google.com" className="ghost-btn">
                     <svg>
                         <defs>
