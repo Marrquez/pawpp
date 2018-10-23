@@ -1,0 +1,7 @@
+.footer #particles-bg {
+    position: absolute;
+    top: 0;
+}
+.footer .particles-js-canvas-el {
+    height: 250px !important;
+}

@@ -10,7 +10,6 @@ class Footer extends Component {
     componentDidMount(){ }
     componentWillUnmount() { }
     componentWillReceiveProps(nextProps){ }
-    shouldComponentUpdate(nextProps, nextState){ }
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(prevProps, prevState){ }
     render() {
@@ -43,6 +42,7 @@ class Footer extends Component {
                     </div>
                 </section>
                 <footer className="footer">
+                    <div id="particles-bg"></div>
                     <div className="container">
                         <div className="row">
                             <div className="col-12">

@@ -10,7 +10,6 @@ class Menu extends Component {
     componentDidMount(){ }
     componentWillUnmount() { }
     componentWillReceiveProps(nextProps){ }
-    shouldComponentUpdate(nextProps, nextState){ }
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(prevProps, prevState){ }
     render() {
@@ -22,9 +21,8 @@ class Menu extends Component {
                     </a>
                 </div>
                 <div className="hamburger-menu">
-                    <span></span><span></span><span></span>
+                    <i className="icon fa fa-user"></i>
                 </div>
-                <div className="search-btn"></div>
                 <ul className="navbar-nav">
                     <li className="nav-item"><a href="index.html" className="nav-link transition">HOME</a></li>
                     <li className="nav-item"><a href="coddle.html" className="nav-link transition">CODDLE</a></li>

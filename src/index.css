@@ -1,0 +1,24 @@
+.icon {
+    bottom: 0;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+
+.hamburger-menu.open i.fa-user::before {
+    content: "\f00d";
+}
+
+.secundary-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}

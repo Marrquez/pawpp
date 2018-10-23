@@ -1,0 +1,9 @@
+.user .inner form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user .info-user {
+    color: #fff;
+}

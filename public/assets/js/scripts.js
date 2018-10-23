@@ -2,15 +2,12 @@
 	$(document).ready(function() {
 		"use strict";
 		
-		
 		// VIDEO MASK TEXT
 		const video = document.querySelector("video");
 		if (window.matchMedia('(prefers-reduced-motion)').matches) {
 		  video.removeAttribute("autoplay");
 		  video.pause();
 		}
-		
-		
 		
 		// PARTICLES BG EFFECT 
 		var n = document.getElementById("particles-bg");
@@ -130,8 +127,6 @@
 		});
 					};
 		
-		
-		
 		// READMORE JS
 		 $('.intro-coddle .article').readmore({
 		  moreLink: '<p><a href="#" class="ghost-btn"><svg><defs><linearGradient id="grad1"><stop offset="0%" stop-color="#FF8282"/><stop offset="100%" stop-color="#E178ED" /></linearGradient></defs><rect width="206" height="50" x="5" y="5" rx="25" fill="none" stroke="url(#grad1)"></rect></svg><span>Learn More +</span></a></p>',
@@ -143,8 +138,7 @@
 			}
 		  }
 		});
-		
-		
+
 		// PERSPECTIVE
 		(function() {
 			var tiltSettings = [
@@ -190,10 +184,7 @@
 			})();
 			
 		})();
-	
-	
-	
-	
+
 		// MAIN FEATURES
 		$('.main-features .more-link').on('click', function(e) {
 			jQuery(this).text('+');
@@ -206,8 +197,7 @@
 			 $(this).parent(".main-features").siblings(".feature-box").children("ul").next().slideUp();
 			return false;
 		});
-		
-		
+
 		// SERVICES
 		$('.services .more-link').on('click', function(e) {
 			jQuery(this).text('+');
@@ -220,30 +210,18 @@
 			 $(this).parent(".services").siblings(".service-box").children("ul").next().slideUp();
 			return false;
 		});
-	
-	
 		
 		// HAMBURGER MENU
 		$('.hamburger-menu').on('click', function(e) {
 			$(this).toggleClass("open")
 			$(".hamburger-menu-box").toggleClass("show-me")
-			});
-
-
-		$('.search-btn').on('click', function(e) {
-			$(".search-box").toggleClass("show-me")
-			});
-	
-	
+		});
 	
 		// STICKY NAVBAR
 		$(window).on("scroll touchmove", function (e) {
 		$('.navbar').toggleClass('stick-me', $(document).scrollTop() > 1);
 		
-		});	
-
-	
-		
+		});
 
 		// SWIPER SLIDER
 			var swiper = new Swiper('.swiper-slider', {
@@ -264,22 +242,17 @@
 				},
 			});
 
-
-
 		// TREE MENU
 		$('.hamburger-menu-box .menu .navbar-nav .nav-item .nav-link').click(function (e) {
 			$(this).parent().children('.hamburger-menu-box .menu .navbar-nav .nav-item ul').slideToggle(300);
 			return true;
 	  	});
 
-
-
 		// PAGE TRANSITION
 		$('.transition').on('click', function(e) {
 		$('.transition-overlay').toggleClass("show-me");
 		});
-		
-		
+
 		// TRANSITION DELAY
 		$('.transition').on('click', function(e) {
 			e.preventDefault();                  
@@ -289,8 +262,6 @@
 			},1000);       
 			});
 
-
-
 		// WORKS GRID
 		$(window).load(function(e){
 			$('.works-grid').isotope({
@@ -298,10 +269,7 @@
 			  percentPosition: true
 			});
 		});
-		
-		
-		
-		
+
 		// WORKS FILTER
 		$(window).load(function(e){
 			var $container = $('.works-grid');
@@ -330,15 +298,8 @@
 			return false;
 		}); 
 		});
-		
-		
-		
-		
-		
 		});
-	
-	
-	
+
 		// ODOMETER 
 		$(window).scroll( function(e){
 		$('.odometer').each( function(i){
@@ -358,10 +319,6 @@
 		}); 
 		});
 	
-	
-		
-	
-	
 		// WOW ANIMATION 
 		wow = new WOW(
 			{
@@ -370,8 +327,6 @@
 			}
 			);
     	wow.init();
-	
-		
 })(jQuery);
 
 		

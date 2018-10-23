@@ -10,7 +10,6 @@ class Quote extends Component {
     componentDidMount(){ }
     componentWillUnmount() { }
     componentWillReceiveProps(nextProps){ }
-    shouldComponentUpdate(nextProps, nextState){ }
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(prevProps, prevState){ }
     render() {
