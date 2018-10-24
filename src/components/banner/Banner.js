@@ -12,12 +12,15 @@ class Banner extends Component {
     componentWillReceiveProps(nextProps){ }
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(prevProps, prevState){ }
+    navigate(view){
+        this.props.navigate({view:view});
+    }
     render() {
         return (
             <div className="banner inner">
-                <h2>JUAN CARLOS</h2>
-                <p>Que mk tan pero tan care chimbin, y demorado para pagar, pero bueno, ahí vamos... Arriba R&S Solutions!!</p>
-                <a href="google.com" className="ghost-btn">
+                <h2>APLICACIONES WEB</h2> 
+                <p>Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías.</p>
+                <button onClick={() => this.navigate("contact")}  className="ghost-btn" >
                     <svg>
                         <defs>
                             <linearGradient>
@@ -27,8 +30,8 @@ class Banner extends Component {
                         </defs>
                         <rect width="206" height="50" x="5" y="5" rx="25" fill="none" stroke="#ffffff"></rect>
                     </svg>
-                    <span>Discover Now</span>
-                </a>
+                    <span>¡Escríbeme!</span>
+                </button>
             </div>
         );
     }

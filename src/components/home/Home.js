@@ -32,7 +32,8 @@ class Home extends Component {
             user: {
                 email: '',
                 logged:false
-            }
+            },
+            view: 'home'
         }
     }
     componentWillMount(){
@@ -125,7 +126,30 @@ class Home extends Component {
             // An error happened.
         });
     }
+    navigate(view){
+        this.setState(view);
+    }
     render() {
+        var currentView = null;
+
+        switch(this.state.view){
+            case 'home':
+                currentView = <div><About></About>
+                    <Services></Services>
+                    <Portfolio></Portfolio>
+                    <News></News>
+                    <Quote></Quote>
+                    <Footer></Footer></div>;
+                break;
+
+            case 'contact':
+                currentView = <Contact></Contact>;
+                break;
+
+
+            default:
+                break;
+        }
         return (
             <div className="home">
                 <div className="preloader">
@@ -143,15 +167,11 @@ class Home extends Component {
                 </User>
                 <header className="header">
                     <Menu></Menu>
-                    <Banner></Banner>
+                    <Banner
+                        navigate={this.navigate.bind(this)}>
+                    </Banner>
                 </header>
-                <About></About>
-                <Contact></Contact>
-                <Services></Services>
-                <Portfolio></Portfolio>
-                <News></News>
-                <Quote></Quote>
-                <Footer></Footer>
+                {currentView}
             </div>
         );
     }
