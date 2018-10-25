@@ -11,7 +11,7 @@
     width: 30px;
 }
 
-.hamburger-menu.open i.fa-user::before {
+.hamburger-menu.open i.fa-bars::before {
     content: "\f00d";
 }
 
@@ -21,4 +21,11 @@
     color: #fff;
     cursor: pointer;
     text-decoration: underline;
+}
+
+.header, .int-header {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }

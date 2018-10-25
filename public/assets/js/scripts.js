@@ -216,6 +216,10 @@
 			$(this).toggleClass("open")
 			$(".hamburger-menu-box").toggleClass("show-me")
 		});
+        $('.hamburger-menu-box ul li').on('click', function(e) {
+            $('.hamburger-menu').toggleClass("open");
+            $(".hamburger-menu-box").toggleClass("show-me");
+        });
 	
 		// STICKY NAVBAR
 		$(window).on("scroll touchmove", function (e) {
@@ -247,20 +251,6 @@
 			$(this).parent().children('.hamburger-menu-box .menu .navbar-nav .nav-item ul').slideToggle(300);
 			return true;
 	  	});
-
-		// PAGE TRANSITION
-		$('.transition').on('click', function(e) {
-		$('.transition-overlay').toggleClass("show-me");
-		});
-
-		// TRANSITION DELAY
-		$('.transition').on('click', function(e) {
-			e.preventDefault();                  
-			var goTo = this.getAttribute("href"); 
-			setTimeout(function(){
-			window.location = goTo;
-			},1000);       
-			});
 
 		// WORKS GRID
 		$(window).load(function(e){

@@ -214,6 +214,7 @@ class User extends Component {
         this.state = {
             view: 'login'
         }
+        this.asideRef = React.createRef();
     }
     componentWillMount(){ }
     componentDidMount(){ }
@@ -231,6 +232,10 @@ class User extends Component {
     signOutUser(){
         this.props.signOutUser();
         this.navigate('login');
+    }
+    navigate(view, header){
+        //this.asideRef.current.className = "user hamburger-menu-box";
+        this.props.navigate(view, header);
     }
     render() {
         var currentForm = null;
@@ -252,10 +257,10 @@ class User extends Component {
             currentForm = <RecoverForm goBack={() => this.navigate("login")} recoverByEmail={this.props.recoverByEmail.bind(this)}></RecoverForm>;
         }
         return (
-            <aside className="user hamburger-menu-box">
+            <aside className="user hamburger-menu-box" ref={this.asideRef} >
                 <div className="menu">
                     <ul className="navbar-nav">
-                        <li className="nav-item"><a href="index.html" className="nav-link transition">HOME</a></li>
+                        <li className="nav-item"><span onClick={() => this.navigate("home", "header")} className="nav-link transition">HOME</span></li>
                         <li className="nav-item"><a href="coddle.html" className="nav-link transition">CODDLE</a></li>
                         <li className="nav-item"><a href="services.html" className="nav-link transition">SERVICES</a></li>
                         <li className="nav-item"><a href="http://google.com" className="nav-link">WORKS</a>
@@ -267,7 +272,7 @@ class User extends Component {
                             </ul>
                         </li>
                         <li className="nav-item"><a href="news.html" className="nav-link transition">NEWS</a></li>
-                        <li className="nav-item"><a href="contact.html" className="nav-link transition">CONTACT</a></li>
+                        <li className="nav-item"><span onClick={() => this.navigate("contact", "header int-header")} className="nav-link transition">CONTACT</span></li>
                     </ul>
                 </div>
                 <div className="inner">

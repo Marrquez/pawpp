@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import store from '../../store';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
@@ -33,7 +34,9 @@ class Home extends Component {
                 email: '',
                 logged:false
             },
-            view: 'home'
+            view: 'home',
+            header: 'header',
+            banner: {}
         }
     }
     componentWillMount(){
@@ -126,8 +129,8 @@ class Home extends Component {
             // An error happened.
         });
     }
-    navigate(view){
-        this.setState(view);
+    navigate(view, header){
+        this.setState({view: view, header: header});
     }
     render() {
         var currentView = null;
@@ -163,12 +166,16 @@ class Home extends Component {
                     logInUser={this.logInUser.bind(this)}
                     signInUser={this.signInUser.bind(this)}
                     signOutUser={this.signOutUser.bind(this)}
-                    recoverByEmail={this.recoverByEmail.bind(this)}>
+                    recoverByEmail={this.recoverByEmail.bind(this)}
+                    navigate={this.navigate.bind(this)}>
                 </User>
-                <header className="header">
-                    <Menu></Menu>
-                    <Banner
+                <header className={this.state.header}>
+                    <Menu
                         navigate={this.navigate.bind(this)}>
+                    </Menu>
+                    <Banner
+                        navigate={this.navigate.bind(this)}
+                        view={this.state.view}>
                     </Banner>
                 </header>
                 {currentView}

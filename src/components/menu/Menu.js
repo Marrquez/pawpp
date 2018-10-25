@@ -12,6 +12,9 @@ class Menu extends Component {
     componentWillReceiveProps(nextProps){ }
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(prevProps, prevState){ }
+    navigate(view, header){
+        this.props.navigate(view, header);
+    }
     render() {
         return (
             <nav className="menu navbar">
@@ -21,10 +24,10 @@ class Menu extends Component {
                     </a>
                 </div>
                 <div className="hamburger-menu">
-                    <i className="icon fa fa-user"></i>
+                    <i className="icon fa fa-bars"></i>
                 </div>
                 <ul className="navbar-nav">
-                    <li className="nav-item"><a href="index.html" className="nav-link transition">HOME</a></li>
+                    <li className="nav-item"><span onClick={() => this.navigate("home", "header")} className="nav-link transition">HOME</span></li>
                     <li className="nav-item"><a href="coddle.html" className="nav-link transition">CODDLE</a></li>
                     <li className="nav-item"><a href="services.html" className="nav-link transition">SERVICES</a></li>
                     <li className="nav-item"><a href="google.com" className="nav-link">WORKS</a>
@@ -36,7 +39,7 @@ class Menu extends Component {
                     </ul>
                     </li>
                     <li className="nav-item"><a href="news.html" className="nav-link transition">NEWS</a></li>
-                    <li className="nav-item"><a href="contact.html" className="nav-link transition">CONTACT</a></li>
+                    <li className="nav-item"><span onClick={() => this.navigate("contact", "header int-header")} className="nav-link transition">CONTACT</span></li>
                 </ul>
             </nav>
         );

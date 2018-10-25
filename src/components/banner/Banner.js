@@ -4,23 +4,40 @@ import './Banner.css';
 class Banner extends Component {
     constructor(props) {
         super();
-        this.state = { }
+        this.state = {
+            title: "APPS WEB",
+            description: "Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías."
+        }
     }
-    componentWillMount(){ }
-    componentDidMount(){ }
-    componentWillUnmount() { }
-    componentWillReceiveProps(nextProps){ }
-    componentWillUpdate(nextProps, nextState){ }
-    componentDidUpdate(prevProps, prevState){ }
-    navigate(view){
-        this.props.navigate({view:view});
+    componentWillMount(){}
+    componentDidMount(){}
+    componentWillUnmount() {}
+    componentWillReceiveProps(nextProps){
+        this.setHeaderData(nextProps.view);
+    }
+    componentWillUpdate(nextProps, nextState){}
+    componentDidUpdate(prevProps, prevState){}
+    navigate(view, header){
+        this.props.navigate(view, header);
+        this.setHeaderData(view);
+    }
+    setHeaderData(view){
+        switch(view){
+            case 'contact':
+                this.setState({title: 'Escríbeme', description: 'Puedes contactarme a través del siguiente Formulario de contacto o través de mis Redes Sociales'});
+                break;
+
+            default:
+                this.setState({title: 'APPS WEB', description: 'Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías.'});
+                break;
+        }
     }
     render() {
         return (
             <div className="banner inner">
-                <h2>APLICACIONES WEB</h2> 
-                <p>Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías.</p>
-                <button onClick={() => this.navigate("contact")}  className="ghost-btn" >
+                <h2>{this.state.title}</h2>
+                <p>{this.state.description}</p>
+                <button onClick={() => this.navigate("contact", "header int-header")} className="ghost-btn" >
                     <svg>
                         <defs>
                             <linearGradient>

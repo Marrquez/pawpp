@@ -34,22 +34,10 @@ class About extends Component {
                     <div className="side-content">
                         <div className="titles">
                             <span className="title-bg"></span>
-                            <h3>ABOUT CODDLE</h3>
+                            <h3>SOY CRISTIAN MÁRQUEZ</h3>
                         </div>
-                        <p>Interactive digital experiences are continually becoming <u>more amazing</u> and <u>more complex</u> to produce. Our team is specially designed to create successful, custom, innovative digital products from the initial concept through full product launch.</p>
-                        <p>Strategists, researchers, product managers, <strong>UX/UI designers</strong>, technologists, web and mobile developers all working together, dedicated to your brand and your product. Talk To Our Team.</p>
-                        <a href="google.com" className="ghost-btn">
-                            <svg>
-                                <defs>
-                                    <linearGradient id="grad1">
-                                        <stop offset="0%" stopColor="#FF8282"/>
-                                        <stop offset="100%" stopColor="#E178ED" />
-                                    </linearGradient>
-                                </defs>
-                                <rect width="206" height="50" x="5" y="5" rx="25" fill="none" stroke="url(#grad1)"></rect>
-                            </svg>
-                            <span>Learn More +</span>
-                        </a>
+                        <p><u>Ingeniero de Sistemas</u>, <u>Desarrollador Web</u> de la Universidad del Cauca y <u>Magíster</u> en Tecnologías de Información para el Negocio de la Universidad de lo Andes, Bogotá.</p>
+                        <p>Con 28 años de edad soy un experto en el desarrollo de todo tipo de Aplicaciones Web, con fuertes habilidades en el <strong>UI/Front End</strong>, soy un profesional honesto, comprometido, responsable y dedicado.</p>
                     </div>
                 </section>
                 <section className="feeding-coddle">
