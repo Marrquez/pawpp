@@ -31,6 +31,14 @@ class Banner extends Component {
                 this.setState({title: 'Conocimientos Técnicos', description: 'Durante toda mi vida como profesional he trabajado en el desarrollo de Aplicaciones Web, con distintas tecnologías en diferentes versiones.'});
                 break;
 
+            case 'portfolio':
+                this.setState({title: 'Experiencia de trabajo', description: 'Durante toda mi vida como profesional he trabajado en el desarrollo de Aplicaciones Web, con distintas tecnologías en diferentes versiones.'});
+                break;
+
+            case 'news':
+                this.setState({title: 'Noticias', description: 'Durante toda mi vida como profesional he trabajado en el desarrollo de Aplicaciones Web, con distintas tecnologías en diferentes versiones.'});
+                break;
+
             default:
                 this.setState({title: 'APLICACIONES WEB', description: 'Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías.'});
                 break;

@@ -138,7 +138,7 @@ class Home extends Component {
         switch(this.state.view){
             case 'home':
                 currentView = <div><About></About>
-                    <Quote></Quote>
+                    <Quote navigate={this.navigate.bind(this)}></Quote>
                     <Footer></Footer></div>;
                 break;
 
