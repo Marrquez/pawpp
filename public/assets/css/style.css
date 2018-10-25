@@ -13,7 +13,6 @@ theme.
 	2.	Custom Container
 	3.	Transition Overlay
 	4.	Preloader
-	5.	Odometer
 	6.	Spinner
 	7.	Form Elements
 	8.	Hamburger Menu
@@ -72,11 +71,6 @@ img { max-width: 100%; }
 .preloader { -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transform: all 0.4s ease; transition: all 0.4s ease; transition-delay: 1s; }
 
 .page-loaded .preloader { transform: translateY(-100%); }
-
-/* ODOMETER */
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-car .odometer-digit { padding: 0; }
-
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-car .odometer-digit .odometer-digit-inner { left: 0; }
 
 /* SPINNER */
 .spinner { -webkit-animation: rotate 2s linear infinite; animation: rotate 2s linear infinite; z-index: 2; position: absolute; top: 50%; left: 50%; margin: -25px 0 0 -25px; width: 50px; height: 50px; }
@@ -265,9 +259,6 @@ button[type="submit"] { height: 52px; display: inline-block; border: none; backg
 
 /* FEEDING CODDLE */
 .feeding-coddle { width: 100%; display: flex; text-align: center; padding: 60px 0; background: #f1f5fd; color: #3C9BCB; }
-.feeding-coddle figure { width: 100%; margin-bottom: 0; }
-.feeding-coddle figure img { height: 70px; margin-bottom: 20px; }
-.feeding-coddle .odometer { font-family: "Fjalla One"; font-size: 40px; margin-bottom: 15px; }
 .feeding-coddle h6 { font-weight: 600; font-size: 12px; color: #f07f23; text-transform: uppercase; }
 
 /* RECENT WORKS */
@@ -453,8 +444,6 @@ button[type="submit"] { height: 52px; display: inline-block; border: none; backg
   .side-image-content .side-image { padding: 0 15px; }
   .side-image-content .side-content { padding: 0 15px; }
   .feeding-coddle { padding: 0; padding-bottom: 60px; }
-  .feeding-coddle figure { margin-top: 60px; }
-  .feeding-coddle .odometer { margin-bottom: 0; width: 100%; float: left; }
   .main-features .feature-box { width: calc(100% - 60px); margin: 0 30px; margin-bottom: 30px; }
   .recent-works .works-grid li { width: 100%; }
   .recent-news .news-box figure { width: 100%; float: left; }

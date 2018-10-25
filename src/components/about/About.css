@@ -1,0 +1,12 @@
+.about .feeding-coddle .icon-container {
+    height: 90px;
+    position: relative;
+    width: 130px;
+}
+.about .feeding-coddle i {
+    color: #97A4C1;
+    font-size: 70px;
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
+}

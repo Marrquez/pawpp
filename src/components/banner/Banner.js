@@ -5,7 +5,7 @@ class Banner extends Component {
     constructor(props) {
         super();
         this.state = {
-            title: "APPS WEB",
+            title: "APLICACIONES WEB",
             description: "Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías."
         }
     }
@@ -28,7 +28,7 @@ class Banner extends Component {
                 break;
 
             default:
-                this.setState({title: 'APPS WEB', description: 'Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías.'});
+                this.setState({title: 'APLICACIONES WEB', description: 'Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías.'});
                 break;
         }
     }

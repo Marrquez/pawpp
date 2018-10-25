@@ -222,9 +222,6 @@ class User extends Component {
     componentWillReceiveProps(nextProps){ }
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(prevProps, prevState){ }
-    navigate(view){
-        this.setState({view:view});
-    }
     signInUser(user){
         this.props.signInUser(user);
         this.navigate('login');
@@ -234,8 +231,8 @@ class User extends Component {
         this.navigate('login');
     }
     navigate(view, header){
-        //this.asideRef.current.className = "user hamburger-menu-box";
         this.props.navigate(view, header);
+        this.setState({view:view});
     }
     render() {
         var currentForm = null;

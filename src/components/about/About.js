@@ -44,24 +44,34 @@ class About extends Component {
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-2 col-md-2 col-6">
-                                <figure><img src="assets/images/icon-food01.jpg" alt="Image1" /></figure>
-                                <h6>Slices of Pizza</h6>
-                                <span className="odometer" id="1"></span>
+                                <div className="icon-container">
+                                    <i className="icon fab fa-angular"></i>
+                                </div>
+                                <h6>Angular</h6>
                             </div>
                             <div className="col-lg-2 col-md-2 col-6">
-                                <figure><img src="assets/images/icon-food02.jpg" alt="Image1" /></figure>
-                                <h6>Box of Donuts</h6>
-                                <span className="odometer" id="2"></span>
+                                <div className="icon-container">
+                                    <i className="icon fab fa-react"></i>
+                                </div>
+                                <h6>React</h6>
                             </div>
                             <div className="col-lg-2 col-md-2 col-6">
-                                <figure><img src="assets/images/icon-food03.jpg" alt="Image1" /></figure>
-                                <h6>Roll of Tacos</h6>
-                                <span className="odometer" id="3"></span>
+                                <div className="icon-container">
+                                    <i className="icon fab fa-html5"></i>
+                                </div>
+                                <h6>HTML 5</h6>
                             </div>
                             <div className="col-lg-2 col-md-2 col-6">
-                                <figure><img src="assets/images/icon-food04.jpg" alt="Image1" /></figure>
-                                <h6>Piece of Hotdog</h6>
-                                <span className="odometer" id="4"></span>
+                                <div className="icon-container">
+                                    <i className="icon fab fa-js"></i>
+                                </div>
+                                <h6>Javascript</h6>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-6">
+                                <div className="icon-container">
+                                    <i className="icon fab fa-css3"></i>
+                                </div>
+                                <h6>CSS</h6>
                             </div>
                         </div>
                     </div>
