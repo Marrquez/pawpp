@@ -138,9 +138,6 @@ class Home extends Component {
         switch(this.state.view){
             case 'home':
                 currentView = <div><About></About>
-                    <Services></Services>
-                    <Portfolio></Portfolio>
-                    <News></News>
                     <Quote></Quote>
                     <Footer></Footer></div>;
                 break;
@@ -149,6 +146,17 @@ class Home extends Component {
                 currentView = <Contact></Contact>;
                 break;
 
+            case 'knowledge':
+                currentView = <Services></Services>;
+                break;
+
+            case 'portfolio':
+                currentView = <Portfolio></Portfolio>;
+                break;
+
+            case 'news':
+                currentView = <News></News>;
+                break;
 
             default:
                 break;

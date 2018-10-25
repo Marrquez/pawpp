@@ -258,17 +258,9 @@ class User extends Component {
                 <div className="menu">
                     <ul className="navbar-nav">
                         <li className="nav-item"><span onClick={() => this.navigate("home", "header")} className="nav-link transition">HOME</span></li>
-                        <li className="nav-item"><a href="coddle.html" className="nav-link transition">CODDLE</a></li>
-                        <li className="nav-item"><a href="services.html" className="nav-link transition">SERVICES</a></li>
-                        <li className="nav-item"><a href="http://google.com" className="nav-link">WORKS</a>
-                            <ul>
-                                <li><a href="works-spaced-grid.html" className="transition">SPACED GRID</a></li>
-                                <li><a href="works-nonspaced-grid.html" className="transition">NONSPACED GRID</a></li>
-                                <li><a href="works-masonry-grid.html" className="transition">MASONRY GRID</a></li>
-                                <li><a href="works-retro-grid.html" className="transition">RETRO GRID</a></li>
-                            </ul>
-                        </li>
-                        <li className="nav-item"><a href="news.html" className="nav-link transition">NEWS</a></li>
+                        <li className="nav-item"><span onClick={() => this.navigate("knowledge", "header int-header")} className="nav-link transition">CONOCIMIENTOS</span></li>
+                        <li className="nav-item"><span onClick={() => this.navigate("portfolio", "header int-header")} className="nav-link transition">PORTAFOLIO</span></li>
+                        <li className="nav-item"><span onClick={() => this.navigate("news", "header int-header")} className="nav-link transition">NEWS</span></li>
                         <li className="nav-item"><span onClick={() => this.navigate("contact", "header int-header")} className="nav-link transition">CONTACT</span></li>
                     </ul>
                 </div>

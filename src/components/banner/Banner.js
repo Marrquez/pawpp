@@ -27,6 +27,10 @@ class Banner extends Component {
                 this.setState({title: 'Escríbeme', description: 'Puedes contactarme a través del siguiente Formulario de contacto o través de mis Redes Sociales'});
                 break;
 
+            case 'knowledge':
+                this.setState({title: 'Conocimientos Técnicos', description: 'Durante toda mi vida como profesional he trabajado en el desarrollo de Aplicaciones Web, con distintas tecnologías en diferentes versiones.'});
+                break;
+
             default:
                 this.setState({title: 'APLICACIONES WEB', description: 'Experto en el desarrollo de todo tipo de Aplicaciones Web, todo a tu medida, con las últimas tecnologías.'});
                 break;

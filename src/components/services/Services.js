@@ -20,7 +20,7 @@ class Services extends Component {
                         <div className="col-12">
                             <div className="titles">
                                 <span className="title-bg"></span>
-                                <h3>CONOCIMIENTOS TÉCNICOS</h3>
+                                <h3>TRABAJO CON LAS ÚLTIMAS Y MÁS POPULARES TECNOLOGÍAS</h3>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
